@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kuis || Pemrog Web</title>
+    <link rel="stylesheet" href="kuis.css">
+    <script src="kuis.js"></script>
+</head>
+<body>
+    <div class="bungkus">
+        <div class="box-kuis" id="kuis">
+            <div class="pertanyaan">
+                <p class="hitung"><span class="hitung-pertanyaan">1</span>/<strong id="total-nomer">5</strong></p>
+                <p class="head-soal">pertanyaan</p>
+            </div>
+
+            <div class="box-soal">
+                <span id="nomer-soal">1</span>
+                <p id="soal">Manakah dari berikut ini yang bukan merupakan teknologi inti yang digunakan dalam pengembangan web?</p>
+            </div>
+
+            <div class="box-jawaban">
+                <div class="box">
+                    <div class="pilihan-jawaban">A</div>
+                    <input type="radio" name="option" id="first" value="a"required hidden>
+                    <label for="first" class="jawaban-label">Test 1</label>   
+                </div>
+
+                <div class="box">
+                    <div class="pilihan-jawaban">B</div>
+                    <input type="radio" name="option" id="second" value="b"required hidden>
+                    <label for="second" class="jawaban-label">Test 2</label>   
+                </div>
+
+                <div class="box">
+                    <div class="pilihan-jawaban">C</div>
+                    <input type="radio" name="option" id="third" value="c"required hidden>
+                    <label for="third" class="jawaban-label">Test 3</label>   
+                </div>
+
+                <div class="box">
+                    <div class="pilihan-jawaban">D</div>
+                    <input type="radio" name="option" id="fourth" value="d"required hidden>
+                    <label for="fourth" class="jawaban-label">Test 4</label>   
+                </div>
+            </div>
+                
+            <div class="box-tombol">
+                <button type="button" class="next-btn button" id="selanjutnya">Selanjutnya</button>
+                <button type="button" class="next-btn button kirim" id="kirim">Selesai</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
