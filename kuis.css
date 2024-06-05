@@ -61,7 +61,7 @@
     text-align: center;
 }
 .box-soal #soal {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 600;
     color: lightblue;
     padding: 10px 15px;
@@ -134,7 +134,7 @@
 .box-tombol button:hover {
     border: 2px solid rgb(100, 216, 255);
     background-color: white;
-    color: black;
+    color: rgb(100, 216, 255);
 }
 .box-tombol .kirim {
     display: none;
