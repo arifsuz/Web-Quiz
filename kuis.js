@@ -30,12 +30,12 @@ const datasoal = [{
 },
 {
     soal: "Tag HTML apa yang biasanya digunakan untuk mendefinisikan judul utama halaman web?",
-    a: "<h4>",
-    b: "<h5>",
-    c: "<h3>",
-    d: "<h1>",
-    e: "<h6>",
-    f: "<h9>",
+    a: "h4",
+    b: "h5",
+    c: "h3",
+    d: "h1",
+    e: "h6",
+    f: "h9",
     correct: "d",
 },
 {
@@ -71,7 +71,7 @@ const semuainput = document.querySelectorAll("input[type='radio']")
 const tombolkirim = document.getElementById("kirim");
 const hasil = document.getElementById("hasil")
 const nilai = document.getElementById("nilai");
-
+console.log(hitungsoal)
 let nilaisekarang = 0;
 let jawaban = 0;
 
@@ -87,7 +87,13 @@ const ambilarraysoal = ()=>{
     jawabanlabel[4].innerHTML = datasoal[nilaisekarang].e;
     jawabanlabel[5].innerHTML = datasoal[nilaisekarang].f;
 
+
     reset();
+
+    if(nilaisekarang == datasoal.length-1){
+        tombollanjut.style.display = "none";
+        tombolkirim.style.display = "block";
+    }
 }
 const reset = ()=>{
     semuainput.forEach((semuainput)=>{
@@ -130,4 +136,5 @@ const getSelection = ()=>{
     return jawaban;
 }
 ambilarraysoal();
+
 
