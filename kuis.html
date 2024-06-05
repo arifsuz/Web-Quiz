@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi Kuis || Pemrog Web</title>
     <link rel="stylesheet" href="kuis.css">
-    <script src="kuis.js"></script>
 </head>
 <body>
     <div class="bungkus">
         <div class="box-kuis" id="kuis">
             <div class="pertanyaan">
                 <p class="hitung"><span class="hitung-pertanyaan">1</span>/<strong id="total-nomer">5</strong></p>
-                <p class="head-soal">pertanyaan</p>
+                <p class="head-soal">PERTANYAAN</p>
             </div>
 
             <div class="box-soal">
                 <span id="nomer-soal">1</span>
-                <p id="soal">Manakah dari berikut ini yang bukan merupakan teknologi inti yang digunakan dalam pengembangan web?</p>
+                <p id="soal">Test</p>
             </div>
 
             <div class="box-jawaban">
@@ -44,13 +43,33 @@
                     <input type="radio" name="option" id="fourth" value="d"required hidden>
                     <label for="fourth" class="jawaban-label">Test 4</label>   
                 </div>
+
+                <div class="box">
+                    <div class="pilihan-jawaban">E</div>
+                    <input type="radio" name="option" id="fifth" value="e"required hidden>
+                    <label for="fifth" class="jawaban-label">Test 5</label>   
+                </div>
+
+                <div class="box">
+                    <div class="pilihan-jawaban">F</div>
+                    <input type="radio" name="option" id="sixth" value="f"required hidden>
+                    <label for="sixth" class="jawaban-label">Test 6</label>   
+                </div>
             </div>
                 
             <div class="box-tombol">
-                <button type="button" class="next-btn button" id="selanjutnya">Selanjutnya</button>
-                <button type="button" class="next-btn button kirim" id="kirim">Selesai</button>
+                <button type="button" class="next-btn tombol" id="selanjutnya">Selanjutnya</button>
+                <button type="button" class="next-btn tombol kirim" id="kirim">Selesai</button>
+            </div>
+        </div>
+
+        <div class="lihat-hasil" id="hasil">
+            <h2 id="nilai">Terjawab</h2>
+            <div class="box-tombol">
+                <button class="tombol" onclick="location.reload();">Ulangi</button>
             </div>
         </div>
     </div>
+<script src="kuis.js"></script>
 </body>
 </html>
