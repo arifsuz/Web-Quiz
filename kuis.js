@@ -71,7 +71,7 @@ const semuainput = document.querySelectorAll("input[type='radio']")
 const tombolkirim = document.getElementById("kirim");
 const hasil = document.getElementById("hasil")
 const nilai = document.getElementById("nilai");
-console.log(hitungsoal)
+
 let nilaisekarang = 0;
 let jawaban = 0;
 
