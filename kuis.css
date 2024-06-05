@@ -118,13 +118,13 @@
     justify-content: center;
     gap: 30px;
 }
-.box-tombol .button{
-    width: calc(70% - 15px);
+.box-tombol .tombol{
+    width: calc(50% - 15px);
     background-color: rgb(100, 216, 255);
     border: 2px solid rgb(100, 216, 255);
     padding: 12px 12px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     border-radius: 12px;
     cursor: pointer;
@@ -137,5 +137,11 @@
     color: black;
 }
 .box-tombol .kirim {
+    display: none;
+}
+.lihat-hasil{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
     display: none;
 }
