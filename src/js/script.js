@@ -10,9 +10,10 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-// if startQuiz button clicked
+const welcome_heading = document.querySelector(".welcome");
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo"); //show info box
+    welcome_heading.style.display = "none"; // hide the welcome heading
 }
 
 // if exitQuiz button clicked
@@ -210,3 +211,4 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+
