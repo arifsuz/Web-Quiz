@@ -16,6 +16,22 @@ body{
     background: lightblue;
 }
 
+.welcome{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(0, 191, 255);
+    -webkit-text-stroke: 1px white;
+    -moz-text-stroke: 1px white;
+    -ms-text-stroke: 1px white;
+    text-stroke: 1px white;
+}
+
 .start_btn,
 .info_box,
 .quiz_box,
