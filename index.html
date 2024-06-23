@@ -1,83 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikasi Kuis || Pemrog Web</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+        name="google-site-verification"
+        content="iNzSj2wvdEOVu1PtrK5FfEiu_teOG2LQn5i3kg-xozQ"
+    />
+    <title>Quiz App || Web Programmer</title>
     <!-- icon -->
-    <link rel="icon" href="src/img/favicon.png">
+    <link rel="icon" href="assets/favicon.png">
     <!-- stylesheet -->
-    <link rel="stylesheet" href="src/css/style.css">
-    <!-- FontAweome CDN Link for Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/app.css">
 </head>
+<script
+    async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3775445581945009" crossorigin="anonymous">
+</script>
 <body>
-    <div class="welcome">
-        <h1>WELCOME TO WEBSITE QUIZ<br>GROUP 3</h1>
-    </div>
-    
-    <!-- start Quiz button -->
-    <div class="start_btn"><button>Start Quiz</button></div>
-
-    <!-- Info Box -->
-    <div class="info_box">
-        <div class="info-title"><span>Rules of this Quiz</span></div>
-        <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-            <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
-            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You'll get points on the basis of your correct answers.</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>The Quizzify Game</h1>
+            <a class="btn" href="./game.html">Play</a>
+            <a class="btn" href="./highscores.html">High Scores</a>
         </div>
     </div>
-
-    <!-- Quiz Box -->
-    <div class="quiz_box">
-        <header>
-            <div class="title">Quiz Application</div>
-            <div class="timer">
-                <div class="time_left_txt">Time Left</div>
-                <div class="timer_sec">15</div>
-            </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-            </div>
-            <div class="option_list">
-            </div>
-        </section>
-
-        <!-- footer of Quiz Box -->
-        <footer>
-            <div class="total_que">
-            </div>
-            <button class="next_btn">Next Question</button>
-        </footer>
-    </div>
-
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">You've completed the Quiz!</div>
-        <div class="score_text">
-        </div>
-        <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
-        </div>
-    </div>
-
-    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
-    <script src="src/js/questions.js"></script>
-
-    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
-    <script src="src/js/script.js"></script>
 </body>
 </html>
