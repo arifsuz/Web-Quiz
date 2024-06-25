@@ -1,8 +1,23 @@
-const highScoresList = document.getElementById("highScoresList");
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+document.addEventListener('DOMContentLoaded', function() {
+  const highScoresList = document.getElementById('highScoresList');
 
-highScoresList.innerHTML = highScores
-  .map(score => {
-    return `<li class="high-score">${score.name} - ${score.score}</li>`;
+  fetch('http://localhost:3000/API/highscores')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Failed to fetch highscores');
+    }
+    return response.json();
   })
-  .join("");
+  .then(highScores => {
+    highScoresList.innerHTML = highScores
+    .sort((a, b) => b.scores - a.scores)
+    .map(score => {
+      return `<li class="high-score"> ${score?.username} - ${score?.scores} </li>`;
+    })
+    .join('');
+  })
+  .catch(error => {
+    console.error('Error fetching highscores:', error);
+    highScoresList.innerHTML = '<li>Error fetching highscores</li>';
+  });
+});
