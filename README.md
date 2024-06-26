@@ -1,6 +1,6 @@
 # Web Quiz
 
-This Web Quiz is a simple website to do a question from the program we have created. We made this program to complete the big task 2 of the web programming course taught by lecturer ZICO ALAMSYAH, S.SI, MTI. Group members consist of :
+This Web Quiz is a simple website to do a question from the program we have created. We made this program to complete the big task 2 of the web programming course taught by lecturer ZICO ALAMSYAH, S.SI, MTI.
 
 ## Features
 
