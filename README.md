@@ -161,12 +161,14 @@ npm install
 Run the server using Node.js before running `index.html`. The commands you use may vary depending on how the project is set up, but will usually be the same:
 
 ```shell
+cd api
 npm start
 ```
 
 Or if the project uses `nodemon` for hot reloading:
 
 ```shell
+cd api
 npm run dev
 ```
 
