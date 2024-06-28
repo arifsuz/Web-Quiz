@@ -143,7 +143,7 @@ This file is a backend server for a quiz application, using the Express framewor
 Ensure you have Node.js and npm (Node Package Manager) installed. You can download them from [https://nodejs.org/](https://nodejs.org/). npm is included with Node.js installation.
 
 ### Step 2: Clone the Project Repository
-Clone this repository project by copying and pasting the command below into your terminal.
+Clone this repository and open project by copying and pasting the command below into your terminal.
 
 ```shell
 git clone https://github.com/Pemrograman-Web-VT-D-101/Web-Quiz.git
