@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz App - Congratulations! || Web Programmer</title>
+    <!-- icon -->
+    <link rel="icon" href="assets/favicon.png">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<script
+    async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3775445581945009" crossorigin="anonymous">
+</script>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <form id="saveScoreForm">
+                <input type="text" name="username" id="username" placeholder="username" />
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+                Save
+                </button>
+            </form>
+            <a class="btn" href="game.html">Play Again</a>
+            <a class="btn" href="index.html">Go Home</a>
+        </div>
+    </div>
+    <script src="./js/end.js"></script>
+</body>
+</html>

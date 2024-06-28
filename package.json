@@ -2,18 +2,18 @@
   "name": "web-quiz",
   "version": "1.0.0",
   "description": "This Web Quiz is a simple website to do a question from the program we have created. We made this program to complete the big task 2 of the web programming course taught by lecturer ZICO ALAMSYAH, S.SI, MTI. Group members consist of :",
-  "main": "server.js",
+  "main": "api/server.js",
   "engines": {
     "node": "20.x"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node api/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@supabase/supabase-js": "^2.43.6",
+    "@supabase/supabase-js": "^2.44.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
