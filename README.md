@@ -159,12 +159,10 @@ npm install
 
 In the dotenv `.env` file you can enter the token from your respective Supabase API which already consists of the `questions` and `users` tables as shown below
 
-
-
+![Cuplikan layar 2024-06-30 201125](https://github.com/arifsuz/Web-Quiz/assets/149920438/45c9f2f7-ba3e-496c-bae3-426f7cbc7edc)
 In the question table, create the title of each column as shown above which consists of `id` `question` `correct_answer` `incorrect_answers`. 
 
-
-
+![Cuplikan layar 2024-06-30 201141](https://github.com/arifsuz/Web-Quiz/assets/149920438/422705c8-b311-4794-bf6e-058ecef32a4e)
 In the users table, create the title of each column as shown above which consists of `id` `username` `scores`. 
 
 ### Step 4: Start the Server
