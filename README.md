@@ -157,6 +157,16 @@ Navigate to the project directory and install the necessary dependencies listed 
 npm install
 ```
 
+In the dotenv `.env` file you can enter the token from your respective Supabase API which already consists of the `questions` and `users` tables as shown below
+
+
+
+In the question table, create the title of each column as shown above which consists of `id` `question` `correct_answer` `incorrect_answers`. 
+
+
+
+In the users table, create the title of each column as shown above which consists of `id` `username` `scores`. 
+
 ### Step 4: Start the Server
 Run the server using Node.js before running `index.html`. The commands you use may vary depending on how the project is set up, but will usually be the same:
 
